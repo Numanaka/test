@@ -1,0 +1,19 @@
+div{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.boxa{
+    background-color: silver;
+    
+}
+
+.boxb{
+    background-color: aquamarine;
+}
+
+.boxc{
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,51 @@
+h2{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 520px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-left: solid 3px red;
+    background-color: #f5f5f5;
+}
+
+form{
+    margin: 0 auto;
+    width: 500px;
+    padding: 15px 10px 15px 10px;
+    border:solid 3px #dcdcdc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    
+}
+
+form div{
+    padding: 15px;
+}
+
+.box{
+    height: 20px;
+    border: solid 1px #dcdcdc;
+}
+
+.age{
+    padding:4px;
+    border: solid 1px #dcdcdc;
+    color: gray;
+}
+
+.comment{
+    border: solid 1px #dcdcdc;
+}
+
+.soushin{
+    padding: 3px 7px;
+    border: solid 2px silver;
+    border-bottom: solid 2px gray;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0 ;
+    background-color: silver;
+    color: white;
+}
