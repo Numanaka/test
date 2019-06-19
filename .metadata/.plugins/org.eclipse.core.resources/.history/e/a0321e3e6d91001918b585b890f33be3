@@ -1,0 +1,16 @@
+package jp.co.internous.action;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapSample {
+
+	public static void main(String[] args){
+	Map<String,String>map = new HashMap<String,String>();
+
+
+
+
+	}
+
+}

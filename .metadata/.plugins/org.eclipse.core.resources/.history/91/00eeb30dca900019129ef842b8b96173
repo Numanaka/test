@@ -1,0 +1,23 @@
+package testproject01;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+
+		int a=5;
+
+		switch(a){
+
+		case 0: System.out.println("=0");
+		break;
+
+		default:
+			System.out.println("no");
+			break;
+		}
+
+	}
+
+}

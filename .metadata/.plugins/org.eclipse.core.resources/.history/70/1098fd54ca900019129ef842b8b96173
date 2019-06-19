@@ -1,0 +1,25 @@
+package testproject01;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+
+		String a="赤";
+
+		switch(a){
+
+		case "赤":
+			System.out.println("赤");
+			break;
+
+		case "白":
+			System.out.println("白");
+			break;
+
+		}
+
+	}
+
+}
