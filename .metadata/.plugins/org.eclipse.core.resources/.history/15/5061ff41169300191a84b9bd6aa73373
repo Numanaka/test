@@ -1,0 +1,27 @@
+drop database if exists numanaka;
+create database numanaka;
+use numanaka;
+
+
+create table fruitstock(
+id int,
+fruit varchar(255),
+number int,
+price int,
+madein varchar(255)
+);
+
+insert into fruitstock values(1,"りんご",33,100,"日本");
+insert into fruitstock values(2,"オレンジ",40,120,"日本");
+insert into fruitstock values(3,"イチゴ",10,250,"日本");
+insert into fruitstock values(4,"ぶどう",25,240,"アメリカ");
+insert into fruitstock values(5,"ナシ",23,150,"日本");
+insert into fruitstock values(6,"パイナップル",15,230,"フィリピン");
+
+update fruitstock set madein = "アメリカ" where id=2;
+update fruitstock set price=350 where fruit="イチゴ";
+
+alter table fruitstock rename stock;
+alter table stock rename fruitstock;
+
+alter table fruitstock add season enum("1","2");

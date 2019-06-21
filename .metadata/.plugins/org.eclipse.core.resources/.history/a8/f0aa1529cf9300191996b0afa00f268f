@@ -1,0 +1,12 @@
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+
+@WebServlet("/InquiryServlet")
+public class InquiryServlet extends HttpServlet{
+	public InquiryServlet(){
+		super();
+	}
+
+
+}
