@@ -1,0 +1,9 @@
+package com.internousdev.login2.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+
+public class LoginDAO {
+
+}

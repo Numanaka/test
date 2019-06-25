@@ -1,0 +1,45 @@
+package com.internousdev.login2.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.internousdev.login2.dto.LoginDTO;
+import com.internousdev.login2.util.DBConnector;
+
+
+
+public class LoginDAO {
+	public LoginDTO select(String name,String password)throws SQLException{
+		LoginDTO dto=new LoginDTO();
+		DBConnector db=new DBConnector();
+		Connection con=db.getConnection();
+		//DTOで定義したフィールドを使ってDBコネクタでDBに接続し、DBコネクタで接続した情報を元にConnectionで接続状態管理
+
+		String sql="select * from user where user_name=? and password=?";
+		//sqlという変数で実行したいSQL文を定義
+		try{
+			PreparedStatement ps=con.prepareStatement(sql);
+			//インポートしたpreparedstatementクラスに書かれている処理？を接続状態で実行？
+			//上で定義したSQL文を実行
+			ps.setString(1,name);
+			ps.setString(2,password);
+
+			ResultSet rs=ps.executeQuery();
+
+			if(rs.next()){
+				dto.setName(rs.getString("user_name"));
+				dto.setPassword(rs.getString("password"));
+			}
+
+		}catch(SQLException e){
+			e.printStackTrace();
+		}finally{
+			con.close();
+		}
+		return dto;
+	}
+
+
+}

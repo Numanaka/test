@@ -1,0 +1,11 @@
+package com.internousdev.login2.action;
+
+import java.sql.SQLException;
+import com.internousdev.login2.dao.LoginDAO;
+import com.internousdev.login2.dto.LoginDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+
+public class LoginAction {
+
+}

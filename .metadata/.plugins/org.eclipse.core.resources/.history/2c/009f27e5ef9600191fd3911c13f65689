@@ -1,0 +1,18 @@
+package com.internousdev.login2.util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConnector {
+
+	private static String driver name="com.mysql.jdbc.Driver";
+	private static String url="jdbc;mysql://localhost/logindb_numanaka";
+
+	private static String user="root";
+	private static String password="mysql";
+
+
+
+
+}

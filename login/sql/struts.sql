@@ -1,5 +1,5 @@
 set names utf8;
-det foreign_key_checks=0;
+set foreign_key_checks=0;
 drop database if exists logindb_numanaka;
 create database logindb_numanaka;
 use logindb_numanaka;
