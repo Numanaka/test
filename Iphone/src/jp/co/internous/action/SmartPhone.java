@@ -4,7 +4,7 @@ package jp.co.internous.action;
 
 
 public class SmartPhone extends Mp3Player{
-	public void play(){
+	public void play(){//それぞれの機能名を出力するメソッド
 		System.out.println("再生（ハイレゾ機能）");
 	}
 	public void stop(){

@@ -32,7 +32,7 @@ public class LoginAction extends ActionSupport {
 
 	}
 
-	public String getName(){//
+	public String getName(){//jspでもnameは使うのでsetter定義
 		return name;
 	}
 

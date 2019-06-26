@@ -5,7 +5,7 @@ public class Iphone {
 	public static void main(String[] args){
 
 		SmartPhone iphone=new SmartPhone();
-		iphone.play();
+		iphone.play();//インスタンス化してメソッド呼び出し
 		iphone.stop();
 		iphone.next();
 		iphone.back();

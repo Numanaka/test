@@ -1,6 +1,6 @@
 package jp.co.internous.action;
 
-public class Mp3Player {
+public class Mp3Player {//各メソッドの定義
 
 	public void play(){
 		System.out.println("再生");
