@@ -1,0 +1,12 @@
+package com.internousdev.webproj3.dao;
+
+import com.internousdev.webproj3.dto.HelloStrutsDTO;
+
+
+public class HelloStrutsDAO {
+
+	public HelloStrutsDTO select(){
+
+	}
+
+}
