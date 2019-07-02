@@ -1,0 +1,17 @@
+package com.internousdev.webproj4.action;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.internousdev.webproj4.dao.TestDAO;
+import com.internousdev.webproj4.dto.LoginDTO;
+
+public class TestAction {
+
+	private String username;
+	private String password;
+	private List<LoginDTO> loginDTOList=new LoginDTO();
+
+	public
+
+}

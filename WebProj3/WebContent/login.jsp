@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta chaeset="utf-8">
+<meta charset="utf-8">
 <title>LOGIN</title>
 </head>
 <body>

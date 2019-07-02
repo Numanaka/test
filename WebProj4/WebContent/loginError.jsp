@@ -6,13 +6,14 @@
 <head>
 <meta charset="utf-8">
 <title>LoginError</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 <h1>エラーが発生しました</h1>
 <br>
 <h3>ログインできません</h3>
 
-<s:if test='(loginDTOList.get(0).username)=="該当者なし"'>
+<s:if test='(loginDTOList.get(0).username)=="該当なし"'>
 該当者はいませんでした
 </s:if>
 
