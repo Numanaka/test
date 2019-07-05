@@ -71,7 +71,7 @@ table{
 
 <div id="main">
 	<div id="top">
-		<p>home</p>
+		<p>Home</p>
 	</div>
 	<div>
 		<s:form action="HomeAction">

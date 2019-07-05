@@ -3,7 +3,6 @@ package com.internousdev.template.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import com.internousdev.template.dto.BuyItemDTO;
 import com.internousdev.template.util.DBConnector;
@@ -28,7 +27,7 @@ public class BuyItemDAO {
 				buyItemDTO.setItemPrice(resultSet.getString("item_price"));
 
 			}
-		}catch(SQLException e){
+		}catch(Exception e){
 			e.printStackTrace();
 		}
 		return buyItemDTO;
