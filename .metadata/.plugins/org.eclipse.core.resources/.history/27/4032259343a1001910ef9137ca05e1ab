@@ -1,0 +1,15 @@
+package com.internousdev.template.dao;
+
+import java.sql.SQLException;
+
+import com.internousdev.template.dto.MyPageDTO;
+
+
+public class MypageDAO {
+
+	public MyPageDTO getMyPageUserInfo(String item_transaction_id,String user_master_id)
+	throws SQLException{
+
+	}
+
+}
