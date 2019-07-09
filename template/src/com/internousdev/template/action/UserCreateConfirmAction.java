@@ -17,7 +17,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 
 	public String execute(){
 		String result=SUCCESS;
-
+		//Create.jspにで入れた値をsessionに入れて、confirm.jspに持ち越す準備
 		if(!(loginUserId.equals(""))
 			&&!(loginPassword.equals(""))
 			&&!(userName.equals(""))){

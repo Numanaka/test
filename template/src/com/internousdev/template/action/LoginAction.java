@@ -24,7 +24,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 		result=ERROR;
 		loginDTO=loginDAO.getLoginUserInfo(loginUserId, loginPassword);
-		session.put("loginUser", loginDTO);
+		session.put("loginUser", loginDTO);//DTO⇒DTOで取得した一連の値にキーを設定
 
 		if(((LoginDTO)session.get("loginUser")).getLoginFlg()){
 			result =SUCCESS;

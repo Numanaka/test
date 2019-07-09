@@ -27,7 +27,7 @@ public class BuyItemCompleteDAO {
 			preparedStatement.setString(5, pay);
 			preparedStatement.setString(6, dateUtil.getDate());
 
-			preparedStatement.execute();
+			preparedStatement.execute();//戻り値を使わないのでupdateはいらない
 
 
 		}catch(Exception e){

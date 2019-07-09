@@ -31,7 +31,7 @@ table{
 	margin:0 auto;
 }
 
-/*==========TAGLAYOUT===========*/
+/*==========ID LAYOUT===========*/
 
 #top{
 	width:780px;
@@ -97,7 +97,7 @@ table{
 
 			<s:form action="MyPageAction">
 				<input type="hidden" name="deleteFlg" value="1">
-				<s:submit value="削除" method="delete"/>
+				<s:submit value="削除"/>
 			</s:form>
 		</s:if>
 

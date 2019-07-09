@@ -18,7 +18,7 @@ public class MyPageDAO {
 		MyPageDTO myPageDTO=new MyPageDTO();
 
 		String sql="SELECT iit.item_name,ubit.total_price,ubit.total_count,ubit.pay FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit ON ubit.item_transaction_id=iit.id WHERE ubit.item_transaction_id=? AND ubit.user_master_id=? ORDER BY ubit.insert_date DESC";
-
+		//item_infoとuser_buyのテーブルを結合⇒商品idを紐付け⇒ユーザーIDと商品IDから商品名や値段を引っ張ってくる
 
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
@@ -40,6 +40,7 @@ public class MyPageDAO {
 		}
 		return myPageDTO;
 	}
+
 	public int buyItemHistoryDelete(String item_transaction_id,String user_master_id)
 	throws SQLException{
 		DBConnector dbConnector=new DBConnector();
@@ -53,12 +54,12 @@ public class MyPageDAO {
 			preparedStatement.setString(1, item_transaction_id);
 			preparedStatement.setString(2, user_master_id);
 
-			result=preparedStatement.executeUpdate();
+			result=preparedStatement.executeUpdate();//Actionで削除件数によって分岐させたいのでUpdateを使う
 		}catch(SQLException e){
 			e.printStackTrace();
 		}finally{
 			connection.close();
 		}
-		return result;
+		return result;//Updateなのでintで返ってくる
 	}
 }
